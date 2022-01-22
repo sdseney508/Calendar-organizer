@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link href=
+	"https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+		rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-1.10.2.js">
+	</script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js">
+	</script>
+
+	<script>
+	   $(function () {
+            $("#gfg").datepicker({
+                dateFormat: 'mm/dd/yy',
+                onSelect: function (date, datepicker) {
+                    if (date != "") {
+                        alert("Selected Date: " + parse(date));
+                    }
+                }
+            });
+        });
+	</script>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h3>jQuery UI datepicker onSelect Option</h3>
+
+	<div>Enter Date: <input type="text" id="gfg" /></div>
+</body>
+
+</html>
+
+
+
+<!-- {
+    changeMonth: true,
+    changeYear: true,
+    showOn: 'button',
+    buttonImageOnly: true,
+    buttonImage: 'images/calendar.gif',
+    dateFormat: 'dd/mm/yy',
+    onSelect: function (dateString, txtDate) {
+        DisplayDate("Selected Date: " + dateString + "\nTextBox ID: " + txtDate.id);
+    } -->
+
+

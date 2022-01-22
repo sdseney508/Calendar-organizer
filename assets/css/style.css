@@ -15,9 +15,20 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: grey;
+  background-color: lightgrey;
   color: black;
   border-radius: 0; 
+}
+
+.btn-custom{
+  border:none;
+  border-radius: 15px;
+  box-shadow: 0 0 8px black;
+}
+
+.column-custom {
+  padding: 15px;
+
 }
 
 .description {
@@ -31,7 +42,7 @@ textarea {
   border: 1px dashed black
 }
 
-.row {
+.time-row {
   display: flex;
   white-space: pre-wrap;
   border-radius: 5px;

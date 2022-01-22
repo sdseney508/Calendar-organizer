@@ -7,132 +7,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="css reset sheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Work Day Scheduler V1</title>
-  <script type="text/javascript">
-
-    /***********************************************
-    * Drop Down Date select script- by JavaScriptKit.com
-    * This notice MUST stay intact for use
-    * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
-    ***********************************************/
-
-    var monthtext = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-
-    function populatedropdown(dayfield, monthfield, yearfield) {
-      var today = new Date()
-      var dayfield = document.getElementById(day_selector)
-      var monthfield = document.getElementById(month_selector)
-      var yearfield = document.getElementById(year_selector)
-
-      for (var i = 0; i < 32; i++)
-        day_selector.options[i] = new Option(i, i + 1)
-      day_selector.options[today.getDate()] = new Option(today.getDate(), today.getDate(), true, true) //select today's day
-      for (var m = 0; m < 12; m++)
-        month_selector.options[m] = new Option(monthtext[m], monthtext[m])
-      month_selector.options[today.getMonth()] = new Option(monthtext[today.getMonth()], monthtext[today.getMonth()], true, true) //select today's month
-
-
-      var thisyear = today.getFullYear()
-
-      for (var y = 0; y < 20; y++) {
-        year_selector.options[y] = new Option(thisyear, thisyear)
-        thisyear += 1
-      }
-      year_selector.options[0] = new Option(today.getFullYear(), today.getFullYear(), true, true) //select today's year
-    }
-
-  </script>
 </head>
 
 <body>
   <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <form id="date_selector">
-      <select id="day_selector">
-      </select>
-      <select id="month_selector">
-      </select>
-      <select id="year_selector">
-      </select>
-    </form>
-
-    <p></p>
-
-    <script type="text/javascript">
-      //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
-      window.onload = function () {
-        populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
-      }
-    </script>
+    <div class="display-4 pb-1">Work Day Scheduler</div>
+    <div class="row">
+      <div class="row col-4 align-items-center"> 
+        <h4>Time:      </h4>    <h4 id="curr_time"></h4>
+      </div>
+      <div class="column col-6 col-md-6 col-lg-6 justify-content-center"><p class="mt-2">Calendar Date:</p><input type="text" min='1' id="date_picker"/>
+        <section><button class="btn btn-success btn-custom mt-2" id="show-today-btn">Show Today</button></section>
+      </div>
+    
+    </div>
   </header>
-
+  
   <Main>
-
-    <div class="container"> This is the top of the dates container.
-      <!-- Timeblocks go here -->
-      <div id="0700" class="row past">
-        <div class="hour-block col-1">07:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="0800" class="row past">
-        <div class="hour-block col-1">08:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-      
-      <div id="0900" class="row past">
-        <div class="hour-block col-1">09:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1000" class="row past">
-        <div class="hour-block col-1">10:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1100" class="row past">
-        <div class="hour-block col-1">11:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1200" class="row past">
-        <div class="hour-block col-1">12:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1300" class="row past">
-        <div class="hour-block col-1">13:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1400" class="row past">
-        <div class="hour-block col-1">14:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1500" class="row past">
-        <div class="hour-block col-1">15:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1600" class="row past">
-        <div class="hour-block col-1">16:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1700" class="row past">
-        <div class="hour-block col-1">17:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
-
-      <div id="1800" class="row past">
-        <div class="hour-block col-1">18:00</div>
-        <div class="meeting-block col-sm-11 col-md-9 col-lg-8"><textarea name="" id="" class="input-area">type here</textarea></div>
-      </div>
+    
+    <div class="column pr-5 pl-5" id="time-rows">
+      <!-- Timeblocks go here. They are autobuilt by the Build Calendar function. -->
 
     </div>
 
@@ -140,6 +37,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
