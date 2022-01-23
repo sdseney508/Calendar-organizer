@@ -1,4 +1,7 @@
 # Calendar-organizer
+![image](https://user-images.githubusercontent.com/62141103/150691703-98dd66cd-fc7e-4768-a54a-6cd3de0743e1.png)
+
+
 
 ## Description
 Displays a work day organizer to track details about upcoming meetings and events.  
@@ -34,8 +37,7 @@ For a good review of formating and descriptions of semantic elements and html an
 
 For a good review of formating and descriptions of javascript and tutorials:  https://www.w3schools.com/
 
-Quiz questions found and sourced at:
-htt
+For jQuery synatx: https://jquery.com/
 
 ## License
 License file located at: https://github.com/sdseney508/calendar-organizer/blob/main/license.txt
