@@ -1,4 +1,7 @@
 # Calendar-organizer
+![image](https://user-images.githubusercontent.com/62141103/150691703-98dd66cd-fc7e-4768-a54a-6cd3de0743e1.png)
+
+
 
 ## Description
 Displays a work day organizer to track details about upcoming meetings and events.  
