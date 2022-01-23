@@ -13,11 +13,21 @@ textarea {
   padding: 10px;
 }
 
-.jumbotron {
+.jumbotron-custom {
   text-align: center;
   background-color: lightgrey;
   color: black;
   border-radius: 0; 
+  padding: 3px;
+  margin-bottom: 1px;
+}
+
+.time-clock{
+  font-weight: bold;
+}
+
+.clock {
+  font-weight: normal;
 }
 
 .btn-custom{
@@ -62,6 +72,8 @@ textarea {
   border-bottom-left-radius: 5px;
   padding: 5px;
   border-right: 1px solid black;
+  min-width: 65px;  /* set the min-width to just wide enough for the time.  
+  if they are on a very small device, have the meeting details fall under the time. */
 }
 
 .meeting-block {
@@ -87,7 +99,7 @@ textarea {
   min-height: 35px;
   text-align: center;
   border: 1px dashed black;
-  background-color: #ff6961;
+  background-color: rgb(25, 48, 252);
   color: white;
 }
 

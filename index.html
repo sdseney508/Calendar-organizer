@@ -13,22 +13,22 @@
 </head>
 
 <body>
-  <header class="jumbotron">
+  <header class="jumbotron jumbotron-custom">
     <div class="display-4 pb-1">Work Day Scheduler</div>
-    <div class="row">
-      <div class="row col-4 align-items-center"> 
-        <h4>Time:      </h4>    <h4 id="curr_time"></h4>
-      </div>
-      <div class="column col-6 col-md-6 col-lg-6 justify-content-center"><p class="mt-2">Calendar Date:</p><input type="text" min='1' id="date_picker"/>
+    <div class="row justify-content-center">
+      <div class="column justify-content-center"><h4>Calendar Date:</h4><input type="text" min='1' id="date_picker" onfocusout="setLocalStorage(id)"/>
         <section><button class="btn btn-success btn-custom mt-2" id="show-today-btn">Show Today</button></section>
       </div>
-    
     </div>
   </header>
   
   <Main>
-    
-    <div class="column pr-5 pl-5" id="time-rows">
+    <!-- Adding the clock and date selected right above the Calendar -->
+    <div class="row justify-items-center mt-1 mb-1" id="time-and-date">
+      <div class="col-4 justify-content-left time-clock">Time:<span class="clock" id="clock"></span></div>
+    </div>
+
+    <div class="column pr-5 pl-5 justify-content-center" id="time-rows">
       <!-- Timeblocks go here. They are autobuilt by the Build Calendar function. -->
 
     </div>
