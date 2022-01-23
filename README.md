@@ -27,7 +27,7 @@ Displays a work day organizer to track details about upcoming meetings and event
 
 
 ## Installation
-Run the application from the following URL: https://sdseney508.github.io/Javascript-Quiz/
+Run the application from the following URL: https://sdseney508.github.io/Calendar-organizer/
 
 ## Usage
 No restrictions on the usage of this calendar tool.
@@ -37,7 +37,7 @@ For a good review of formating and descriptions of semantic elements and html an
 
 For a good review of formating and descriptions of javascript and tutorials:  https://www.w3schools.com/
 
-For jQuery synatx: https://jquery.com/
+For jQuery synatx: https://jQuery.com/
 
 ## License
 License file located at: https://github.com/sdseney508/calendar-organizer/blob/main/license.txt
