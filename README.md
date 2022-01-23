@@ -37,8 +37,7 @@ For a good review of formating and descriptions of semantic elements and html an
 
 For a good review of formating and descriptions of javascript and tutorials:  https://www.w3schools.com/
 
-Quiz questions found and sourced at:
-htt
+For jQuery synatx: https://jquery.com/
 
 ## License
 License file located at: https://github.com/sdseney508/calendar-organizer/blob/main/license.txt
