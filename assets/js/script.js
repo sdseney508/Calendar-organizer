@@ -39,6 +39,7 @@ date_sel.datepicker({
 });
 
 function buildCalendar(t_date) {
+    debugger;
     //reset the calendar by setting innerHTML for time-rows = ""
     document.getElementById('time-rows').innerHTML = '';
 
